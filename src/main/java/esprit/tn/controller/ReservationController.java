@@ -25,10 +25,10 @@ public class ReservationController {
         return reservationService.updateReservation(c);
     }
     @DeleteMapping("/deletereservation")
-    void deletereservation (@RequestBody String idreservation){
+    void deletereservation (@RequestBody Reservation idreservation){
         reservationService.deleteReservation(idreservation);
     }
 
     @GetMapping("/findById")
-    Reservation findById (String id) { return reservationService.findByID(id); }
+    Reservation findById (@RequestBody String id) { return reservationService.findByID(id); }
 }

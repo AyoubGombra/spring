@@ -26,10 +26,10 @@ public class FoyerController {
         return foyerService.updatefoyer(c);
     }
     @DeleteMapping("/deleteFoyer")
-    void deleteCFoyer (@RequestBody Long idFoyer){
+    void deleteCFoyer (@RequestBody Foyer idFoyer){
         foyerService.deleteFoyer(idFoyer);
     }
 
     @GetMapping("/findById")
-    Foyer findById (Long id) { return foyerService.findByID(id); }
+    Foyer findById (@RequestBody Long id) { return foyerService.findByID(id); }
 }

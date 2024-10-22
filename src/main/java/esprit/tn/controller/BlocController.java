@@ -24,9 +24,9 @@ public class BlocController {
         return blocService.updatebloc(c);
     }
     @DeleteMapping("/deleteBloc")
-    void deleteBloc (@RequestBody Long idBloc){
+    void deleteBloc (@RequestBody Bloc idBloc){
         blocService.deleteBloc(idBloc);
     }
     @GetMapping("/findById")
-    Bloc findById (Long id) { return blocService.findByID(id); }
+    Bloc findById (@PathVariable Long id) { return blocService.findByID(id); }
 }

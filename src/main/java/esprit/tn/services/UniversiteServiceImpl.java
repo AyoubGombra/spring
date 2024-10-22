@@ -18,8 +18,8 @@ public class UniversiteServiceImpl implements IUniversiteService{
     }
 
     @Override
-    public void deleteUniversite(Long idUniversite) {
-        universiteRepository.deleteById(idUniversite);
+    public void deleteUniversite(Universite idUniversite) {
+        universiteRepository.delete(idUniversite);
     }
 
     @Override

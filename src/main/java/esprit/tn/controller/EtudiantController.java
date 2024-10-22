@@ -25,7 +25,7 @@ public class EtudiantController {
         return etudiantService.updateEtudiant(c);
     }
     @DeleteMapping("/deleteChambre")
-    void deleteEtudiant (@RequestBody Long idEtudiant){
+    void deleteEtudiant (@RequestBody Etudiant idEtudiant){
         etudiantService.deleteEtudiant(idEtudiant);
     }
 

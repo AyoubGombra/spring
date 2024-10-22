@@ -24,9 +24,10 @@ public class Chambre {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long IdChanbre;*
+    @Column(name = "id_chambre")
+    private Long idChambre;
 
-    private Long NumeroChanbre;
+    private Long numeroChambre;
 
     @Enumerated(EnumType.STRING)
     private TypeChambre typeC;

@@ -18,8 +18,8 @@ public class FoyerServiceImpl implements IFoyerService{
     }
 
     @Override
-    public void deleteFoyer(Long idFoyer) {
-        foyerRepository.deleteById(idFoyer);
+    public void deleteFoyer(Foyer idFoyer) {
+        foyerRepository.delete(idFoyer);
     }
 
     @Override

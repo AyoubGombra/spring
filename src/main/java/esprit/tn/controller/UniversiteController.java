@@ -25,10 +25,10 @@ public class UniversiteController {
         return universiteService.updateUniversite(c);
     }
     @DeleteMapping("/deleteuniversite")
-    void deleteuniversite (@RequestBody Long iduniversite){
+    void deleteuniversite (@RequestBody Universite iduniversite){
         universiteService.deleteUniversite(iduniversite);
     }
 
     @GetMapping("/findById")
-    Universite findById (Long id) { return universiteService.findByID(id); }
+    Universite findById (@RequestBody Long id) { return universiteService.findByID(id); }
 }
